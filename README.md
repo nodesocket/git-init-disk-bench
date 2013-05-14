@@ -1,7 +1,7 @@
 git-init-disk-bench
 ---------
 
-####This is a very crude disk benchmark running `mkdir` and `git init` *5,000* times.####
+####A very crude and brutish disk benchmark running `mkdir` and `git init` *5,000* times.####
 
 Requirements
 ------------
@@ -12,8 +12,19 @@ Usage
 -----
 
 ```` bash
-sh gibench.sh
+time sh gibench.sh
 ````
+
+Results
+-------
+
+**512MB** droplet on [Digital Ocean](https://www.digitalocean.com) with **20GB SSD backed*** storage and *virtio* enabled:
+
+    real	0m21.009s
+    user	0m1.711s
+    sys	    0m8.336s
+
+###POST YOUR BENCHMARK RESULTS HERE: https://github.com/nodesocket/git-init-disk-bench/issues/1###
 
 Current Version
 ---------------
