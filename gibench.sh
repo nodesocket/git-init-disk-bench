@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dir=git
+dir=git-temp
 
 rm -rf $dir &> /dev/null
 mkdir $dir
